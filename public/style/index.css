@@ -5,6 +5,7 @@
 .desc{
     background-color: white;
     border-radius: 10px;
+    padding: 13px;
 }
 
 .desc:hover{
@@ -14,8 +15,6 @@
     transition: 0.2s;
 }
 
-.card-prod{
-}
 .card-prod:hover{
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */

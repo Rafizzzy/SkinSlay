@@ -21,6 +21,7 @@ Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
 Route::get('/produk', [\App\Http\Controllers\HomepageController::class,'produk']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
 
 Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
