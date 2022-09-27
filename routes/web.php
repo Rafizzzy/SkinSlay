@@ -25,6 +25,7 @@ Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'inde
 
 Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
+    Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
 });
 
 
